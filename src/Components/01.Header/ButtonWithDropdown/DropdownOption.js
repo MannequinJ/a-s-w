@@ -1,7 +1,7 @@
 import React from "react";
 import MenuItem from "@mui/material/MenuItem";
 
-export default function DropdownOption(props) {
+export default function DropdownOption({ data, popupState }) {
   return (
     <MenuItem
       PaperProps={{
@@ -9,9 +9,9 @@ export default function DropdownOption(props) {
           fontSize: "14px",
         },
       }}
-      onClick={props.popupState}
+      onClick={popupState}
     >
-      {props.data}
+      {data}
     </MenuItem>
   );
 }

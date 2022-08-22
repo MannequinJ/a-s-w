@@ -1,0 +1,156 @@
+.asi-logo-footer {
+  width: 149px;
+  height: 59.56px;
+}
+.footer-wrap {
+  background-color: black;
+  /* height: 460px; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.footer-product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  justify-content: center;
+}
+.footer-product-info-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  width: 370px;
+}
+.footer-company-logo-info-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.footer-accessability-images-wrap {
+  display: grid;
+  grid-template-columns: 138px 138px;
+  row-gap: 17px;
+  column-gap: 25px;
+  flex-direction: column;
+}
+.footer-accessability-images-wrap img {
+  width: 138px;
+  height: 41px;
+}
+.footer-right-block {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+.footer-about-us {
+  display: flex;
+  gap: 30px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-links-header {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 34px;
+  color: white;
+}
+.footer-link,
+.footer-contact-us-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer-link:hover {
+  color: var(--gray);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.footer-social-buttons {
+  display: flex;
+  gap: 10px;
+}
+.footer-contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (max-width: 1279px) {
+  .footer-list-of-links,
+  .footer-right-block {
+    gap: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .footer-wrap {
+    display: grid;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    gap: 25px;
+  }
+  .footer-about-us {
+    gap: 10%;
+  }
+  .footer-product-info {
+    flex-direction: row;
+  }
+  .footer-left-block {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-wrap {
+    /* padding-left: 8%; */
+    align-items: center;
+    /* flex-direction: column-reverse; */
+  }
+  .footer-product-info {
+    display: block;
+  }
+  .footer-right-block {
+    flex-direction: column;
+  }
+  .asi-logo-footer,
+  .footer-product-info-text {
+    display: none;
+    /* width: auto; */
+  }
+  .footer-images-wrap {
+    width: 100%;
+  }
+  .footer-list-of-links,
+  .footer-about-us,
+  .footer-right-block,
+  .footer-wrap {
+    gap: 30px;
+  }
+}
+@media (max-width: 280px) {
+  .footer-wrap {
+    padding-left: 6%;
+  }
+
+  .footer-right-block {
+    align-items: center;
+  }
+  .footer-list-of-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-accessability-images-wrap {
+    gap: 10px;
+    grid-template-columns: 115px 115px;
+  }
+  .footer-accessability-images-wrap img {
+    width: 115px;
+    height: 34px;
+  }
+}

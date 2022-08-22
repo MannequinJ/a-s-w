@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function LearnMoreElement(props) {
+export default function LearnMoreElement({ data }) {
   return (
     <div className="learn-more-el">
       <div>
-        <img src={props.data.img} alt="Logo" />
+        <img src={data.img} alt="Logo" />
       </div>
-      <div className="learn-more-el-header">{props.data.header}</div>
-      <div className="learn-more-el-main-text">{props.data.mainText}</div>
+      <div className="learn-more-el-title">{data.title}</div>
+      <div className="learn-more-el-description">{data.description}</div>
       <button className="learn-more-el-button">Learn More</button>
     </div>
   );

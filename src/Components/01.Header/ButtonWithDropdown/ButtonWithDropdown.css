@@ -1,0 +1,33 @@
+.btn-with-dropdown-wrap {
+  width: 278px;
+  height: 40px;
+}
+.btn-with-dropdown {
+  display: flex;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  background-color: var(--blue);
+  align-items: center;
+}
+.btn-with-dropdown-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 600px) {
+}
+@media (max-width: 1023px) {
+}
+@media (max-width: 1279px) {
+}
+@media (max-width: 280px) {
+}

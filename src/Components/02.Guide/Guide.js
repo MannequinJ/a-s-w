@@ -1,18 +1,57 @@
 import React from "react";
-import GuideStep from "./GuideStep";
-import { CONSTANTS } from "../../Constants";
+import "./Guide.css";
+import GuideStepsContainer from "./GuideStepsContainter";
 export default function Guide() {
+  const guideAPI = [
+    {
+      name: "coursesList",
+      title: "Choose Any Course",
+      data: [
+        {
+          title: "ADDICTION",
+          courseLocation: "Online",
+          courseDates: "February 14 - February 23, 2022",
+        },
+        {
+          title: "PEDIATRIC DENTAL CARE",
+          courseLocation: "Online",
+          courseDates: "March 12 - April 11, 2022",
+        },
+        {
+          title: "CLINICAL PHARMACOLOGY",
+          courseLocation: "Online",
+          courseDates: "June 1 - July 2, 2022",
+        },
+      ],
+    },
+    {
+      name: "placesList",
+      title: "Choose Anytime & Place",
+      data: [
+        {
+          title: "Aspen, Colorado",
+          img: "/images/02-guide/colorado.svg",
+        },
+        {
+          title: "Hilo, Hawaii",
+          img: "/images/02-guide/hawaii.svg",
+        },
+        {
+          title: "Paris, France",
+          img: "/images/02-guide/paris.svg",
+        },
+      ],
+    },
+    {
+      name: "document",
+      title: "We Fully Document it All",
+      data: {
+        img: "/images/02-guide/document.svg",
+      },
+    },
+  ];
   return (
-    <div
-      className="guide"
-      style={{
-        backgroundImage: `linear-gradient(180deg, rgba(246, 249, 252, 0) 0%, #F6F9FC 130%), 
-        url(/images/02-guide/ami-homepage-main-image.svg)`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <div className="guide ">
       <div className="guide-text">
         <div className="guide-header-text">ANY COURSE. ANYTIME. ANYWHERE.</div>
         <div className="guide-intro-text">
@@ -20,23 +59,7 @@ export default function Guide() {
           your choice, when and where you like. How it works:
         </div>
       </div>
-      <div className="guide-steps-block">
-        <GuideStep
-          num={1}
-          headerText={"Choose Any Course"}
-          data={CONSTANTS.coursesList}
-        />
-        <GuideStep
-          num={2}
-          headerText={"Choose Anytime & Place"}
-          data={CONSTANTS.placesList}
-        />
-        <GuideStep
-          num={3}
-          headerText={"We Fully Document it All"}
-          data={CONSTANTS.document}
-        />
-      </div>
+      {<GuideStepsContainer data={guideAPI} />}
     </div>
   );
 }
